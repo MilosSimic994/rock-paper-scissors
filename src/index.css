@@ -80,7 +80,8 @@ img[alt*="scissors"] {
 }
 
 .home {
-  width: 50%;
+  position: relative;
+  width: 30%;
   height: 20vh;
   display: flex;
   justify-content: center;
@@ -94,6 +95,14 @@ img[alt*="scissors"] {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.triangle {
+  background-color: unset;
+  border-radius: unset;
+  position: absolute;
+  top: 30px;
+  z-index: -2;
 }
 
 .result {

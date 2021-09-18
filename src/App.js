@@ -4,6 +4,7 @@ import { Link, Route, Switch } from "react-router-dom";
 import paperImg from "./images/icon-paper.svg";
 import rockImg from "./images/icon-rock.svg";
 import scissorsImg from "./images/icon-scissors.svg";
+import triangle from "./images/bg-triangle.svg";
 
 import Header from "./components/Header";
 import Buttons from "./components/Buttons";
@@ -12,7 +13,7 @@ import Rules from "./components/Rules";
 
 function App() {
   const [myScore, setMyScore] = useState(0);
-  const [houseScore, setHouseScore] = useState(2);
+  const [houseScore, setHouseScore] = useState(0);
   const [myChoiceS, setMyChoiceS] = useState("");
   const [houseChoiceS, setHouseChoiceS] = useState("");
   const [winnerIs, setWinnerIs] = useState("");
@@ -67,6 +68,7 @@ function App() {
       <Switch>
         <Route exact path="/">
           <div className="home">
+            <img src={triangle} alt="triangle" className='triangle'/>
             <Link to="/result">
               <img src={paperImg} alt="paper" onClick={winner} />
             </Link>
