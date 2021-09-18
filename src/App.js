@@ -1,4 +1,4 @@
-import { useState, useRef, useCallback } from "react";
+import { useState } from "react";
 import { Link, Route, Switch } from "react-router-dom";
 
 import paperImg from "./images/icon-paper.svg";
